@@ -1,0 +1,246 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/tool/index",
+			"aliasPath":"/",
+			"style": {
+				"navigationBarTitleText": "助手",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"aliasPath":"/circle",
+			"style": {
+				"navigationBarTitleText": "社区",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/notice/index",
+			"aliasPath":"/notice",
+			"style": {
+				"navigationBarTitleText": "通知",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/account/index",
+			"aliasPath":"/account",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+
+
+		{
+			"path": "pages/notice/comment",
+			"aliasPath":"/notice/comment",
+			"style": {
+				"navigationBarTitleText": "评论通知",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+
+		{
+			"path": "pages/notice/like",
+			"aliasPath":"/notice/like",
+			"style": {
+				"navigationBarTitleText": "点赞通知",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/notice/follow",
+			"aliasPath":"/notice/follow",
+			"style": {
+				"navigationBarTitleText": "关注通知",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/notice/system",
+			"aliasPath":"/notice/system",
+			"style": {
+				"navigationBarTitleText": "系统通知",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"aliasPath":"/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/category/index",
+			"aliasPath":"/category/:id",
+			"name":"category",
+			"style": {
+				"navigationBarTitleText": "栏目",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/post/index",
+			"aliasPath":"/post/:id",
+			"name":"post",
+			"style": {
+				"navigationBarTitleText": "帖子内容",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/article/index",
+			"aliasPath":"/article/:id",
+			"name":"article",
+			"style": {
+				"navigationBarTitleText": "文章内容",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"aliasPath":"/user/:id",
+			"name":"user",
+			"style": {
+				"navigationBarTitleText": "用户主页",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+
+		{
+			"path": "pages/account/edit",
+			"aliasPath":"/account/edit",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "账户修改"
+			}
+		},
+		{
+			"path": "pages/account/post",
+			"aliasPath":"/account/post",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的帖子"
+			}
+		},
+		{
+			"path": "pages/account/favorite",
+			"aliasPath":"/account/favorite",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/account/integral",
+			"aliasPath":"/account/integral",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的帖子"
+			}
+		},
+		{
+			"path": "pages/suggest/index",
+			"aliasPath":"/suggest",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/auth/login",
+			"aliasPath":"/login",
+			"name":"login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/about/index",
+			"aliasPath":"/about",
+			"name":"about",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "关于我"
+			}
+		},
+		{
+			"path": "pages/predator/index",
+			"aliasPath":"/predator",
+			"name":"predator",
+			"style": {
+				"navigationBarTitleText": "用户主页",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/exception/404",
+			"aliasPath":"/404",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "找不到页面"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "black",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/tool/index",
+				"iconPath": "static/image/bar/zhuye.png",
+				"selectedIconPath": "static/image/bar/zhuye_fill.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/bar/gengduo.png",
+				"selectedIconPath": "static/image/bar/gengduo_fill.png",
+				"text": "社区"
+			},
+			{
+				"pagePath": "pages/notice/index",
+				"iconPath": "static/image/bar/duihua.png",
+				"selectedIconPath": "static/image/bar/duihua_fill.png",
+				"text": "消息"
+			}, 
+			{
+				"pagePath": "pages/account/index",
+				"iconPath": "static/image/bar/wode.png",
+				"selectedIconPath": "static/image/bar/wode_fill.png",
+				"text": "我的"
+			}
+		]
+	}
+}
