@@ -11,14 +11,16 @@ const api = {
     // -------------------------站点接口
     getSystemAuth: "/system/auth",
     getSystemPay:  "/system/pay",
-    getSystemApex:  "/system/apex",
-    getSystemApexMap: "/system/apexMap",
-    getSystemPredator: "/system/predator",
     getSystemIntegralAndExperience: "/system/integralAndExperience",
     getSystemInfo:  "/system/info",
     getSystemHome:  "/system/home",
     getSystemHotUser:"/system/hotUser",
     getGradeNext: "/grade/next",
+
+    getSystemApex:  "/system/apex",
+    getSystemApexMap: "/system/apexMap",
+    getSystemPredator: "/system/predator",
+    getSystemPredatorHistory: "/system/predator/history",
 
     // -------------------------栏目 接口
     getCategoryInfo:  "/category/info",
