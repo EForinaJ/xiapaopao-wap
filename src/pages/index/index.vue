@@ -157,6 +157,8 @@
 					</u-row>
 				</view>
 			</view> -->
+
+
 			<view v-if="list.length > 0 && !loading" class="list">
                 <view v-for="(item,index) in list" :key="index" class="item">
 					<view class="top">
@@ -201,13 +203,17 @@
 							bold 
 							:text="item.title"></u--text>
 						</view>
-						<view @click="goPost(item.id)" v-if="item.content" class="description">
+						<!-- <view @click="goPost(item.id)" v-if="item.content" class="description">
 							<u--text 
 							:lines="3"
 							type="info"
 							size="24rpx"
 							:text="item.content"></u--text>
+						</view> -->
+						<view @click="goPost(item.id)" v-if="item.content" class="description">
+							<u-parse :tagStyle="style" :content="item.content"></u-parse>
 						</view>
+
 						<view v-if="item.images" class="image">
 							<ImageAdaptation :list="item.images"/>
 						</view>
@@ -288,6 +294,9 @@ export default {
                 nomore: '实在没有了'
             },
             status: 'loadmore',
+			style: {
+				span: 'font-size: 16rpx'
+			}
 		}
 	},
 	computed:{
@@ -328,7 +337,6 @@ export default {
                 })
                 return
             }
-            
             this.isShow = res.data.list != null ? false : true
 			this.list = res.data.list != null ? [...this.list,...res.data.list] : [...this.list]
 			this.total = res.data.total || 0
@@ -537,6 +545,8 @@ export default {
 				}
 				.description{
 					margin-bottom: 15rpx;
+					font-size: 28rpx;
+					color: #999;
 				}
 			}
 			.footer{

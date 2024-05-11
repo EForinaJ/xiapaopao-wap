@@ -514,7 +514,7 @@ export default {
             border-radius: 8rpx;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url('/img/home/h2-slider3-background-img.jpg');
+            // background-image: url('/img/home/h2-slider3-background-img.jpg');
             -webkit-clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
             clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
         }

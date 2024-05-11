@@ -39,7 +39,7 @@ module.exports = (vm) => {
 				// 此为uView的方法，详见路由相关文档
 				// vm.$u.route('/login')
 			}, 1500)
-
+			uni.removeStorageSync('xpp-token');
 			return Promise.reject(data)
 		}
 		return data === undefined ? {} : data

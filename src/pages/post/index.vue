@@ -56,8 +56,12 @@
 
 
 
-            <view class="content">
+            <view class="description">
                 <u-parse :tagStyle="style" :content="info.content"></u-parse>
+            </view>
+
+            <view v-if="info.images" class="image">
+                <ImageAdaptation :list="info.images"/>
             </view>
 
             <!-- 隐藏内容 -->
@@ -472,9 +476,11 @@ import {mapState} from "vuex"
 import api from "@/api/index"
 import CommentItem from "@/components/comment/item"
 import{handertree} from "@/utils/tree"
+import ImageAdaptation from "@/components/adaptation/image"
 export default {
 	components:{
-        CommentItem
+        CommentItem,
+        ImageAdaptation
 	},
     filters:{
         resetMode(e){
@@ -1409,6 +1415,12 @@ export default {
 
     .title{
         margin-bottom: 30rpx;
+    }
+
+    .description{
+        margin-bottom: 15rpx;
+        font-size: 28rpx;
+        color: #999;
     }
 
     .resource{

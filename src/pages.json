@@ -153,14 +153,6 @@
 			}
 		},
 		{
-			"path": "pages/account/integral",
-			"aliasPath":"/account/integral",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "我的帖子"
-			}
-		},
-		{
 			"path": "pages/suggest/index",
 			"aliasPath":"/suggest",
 			"style": {

@@ -255,6 +255,8 @@ export default {
                     }
                     .description{
                         margin-bottom: 15rpx;
+                        font-size: 28rpx;
+                        color: #999;
                     }
                 }
                 .footer{
